@@ -1,6 +1,6 @@
 package login;
 
-public class LoginManager {
+public final class LoginManager {
     private static LoginStrategy loginStrategy;
 
     public LoginManager(LoginStrategy loginStrategy) {

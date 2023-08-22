@@ -2,7 +2,7 @@ package login;
 
 import java.util.Scanner;
 
-public class UserLoginStrategy implements LoginStrategy {
+public final class UserLoginStrategy implements LoginStrategy {
 
     @Override
     public User login() {
