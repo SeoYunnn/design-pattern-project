@@ -5,5 +5,5 @@ public abstract class ToppingDecorator extends Food {
         this.baseFood = baseFood;
     }
 
-    public abstract String getDescription();
+    public abstract String getDescription( );
 }
