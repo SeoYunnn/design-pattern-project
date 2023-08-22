@@ -1,4 +1,4 @@
-public class OrderItem {
+public final class OrderItem {
     private Food food; // 주문된 음식을 나타내는 Food 객체
     private int quantity; // 주문된 음식의 수량
 
