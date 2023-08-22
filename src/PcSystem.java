@@ -109,15 +109,20 @@ public class PcSystem {
                     System.out.println("볶음밥을 선택하세요:");
                     System.out.println("1. 계란 볶음밥");
                     System.out.println("2. 김치 볶음밥");
+                    System.out.println("3. 새우 볶음밥");
                     int friedRiceChoice = scanner.nextInt();
                     scanner.nextLine(); // 개행 문자 처리
+                    FoodFactory FriedRiceFactory = new FriedRiceFactory();
 
                     switch (friedRiceChoice) {
                         case 1:
-                            food = new FriedRice();  // 계란 볶음밥 선택
+                            food = FriedRiceFactory.createFood();  // 계란 볶음밥 선택
                             break;
                         case 2:
-                            food = new KimchiTopping(new FriedRice());  // 김치 볶음밥 선택
+                            food = new KimchiTopping(FriedRiceFactory.createFood());  // 김치 볶음밥 선택
+                            break;
+                        case 3:
+                            food = new ShrimpTopping(FriedRiceFactory.createFood()); // 새우 볶음밥 선택
                             break;
                         default:
                             System.out.println("잘못된 선택입니다. 다시 선택하세요 !");
