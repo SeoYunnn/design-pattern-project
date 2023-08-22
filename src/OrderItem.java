@@ -7,7 +7,7 @@ public class OrderItem {
         this.quantity = quantity;
     }
 
-    public String getName() {
+    public String getName( ) {
         return food.getName();
     }
 
