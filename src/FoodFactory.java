@@ -1,3 +1,3 @@
 public interface FoodFactory {
-    Food createFood( );
+    Food createFood();
 }
