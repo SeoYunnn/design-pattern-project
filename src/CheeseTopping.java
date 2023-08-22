@@ -1,4 +1,4 @@
-public class CheeseTopping extends ToppingDecorator {
+public final class CheeseTopping extends ToppingDecorator {
     public CheeseTopping(Food baseFood) {
         super(baseFood);
         name = "치즈 " + baseFood.getName();
