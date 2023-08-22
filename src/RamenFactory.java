@@ -1,5 +1,5 @@
 public class RamenFactory implements FoodFactory {
-    public Food createFood() {
+    public Food createFood( ) {
         return new Ramen();
     }
 }
