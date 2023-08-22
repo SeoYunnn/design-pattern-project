@@ -19,12 +19,12 @@ public class PcSystem {
         int loginAttempts = 0;
 
         while (!loggedIn && loginAttempts < maxLoginAttempts) {
-            System.out.println("=========================");
+            System.out.println("==========================");
             System.out.println("춘식PC에 오신것을 환영합니다");
             System.out.println("1. 회원 로그인");
             System.out.println("2. 비회원 로그인");
             System.out.println("0. 종료");
-            System.out.println("=========================");
+            System.out.println("==========================");
             int loginChoice = scanner.nextInt();
             scanner.nextLine();
 
